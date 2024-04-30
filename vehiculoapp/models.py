@@ -6,6 +6,7 @@ class Vehiculo(models.Model):
     marca = models.CharField(max_length=20, null=False, blank=False)
     modelo = models.CharField(max_length=20, null=False, blank=False)
     year = models.IntegerField(null=False, blank=False)
+    activo = models.BooleanField(default=False)
     
 class Chofer(models.Model):
     rut = models.CharField(max_length=9, primary_key=True) 
